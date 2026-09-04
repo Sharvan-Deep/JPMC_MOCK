@@ -12,7 +12,10 @@ from ai_service.schemas.classification import WASHClassificationResult
 from ai_service.schemas.document import DocumentInputSchema, DocumentValidationResponse
 from ai_service.schemas.extraction import CSRExtractionResult
 from ai_service.schemas.preprocessing import CSRPreprocessingResult
+from ai_service.schemas.vector_store import IndexingResult, SearchQueryRequest, SearchResult
 from ai_service.services.document_service import DocumentService
+from ai_service.vector_store.indexer import CSRIndexingService
+from ai_service.vector_store.retriever import CSRSemanticSearchService
 
 router = APIRouter(prefix="/api/v1/documents", tags=["Documents"])
 
@@ -31,6 +34,14 @@ def get_preprocessing_service() -> CSRPreprocessingService:
 
 def get_classification_service() -> CSRClassificationService:
     return CSRClassificationService()
+
+
+def get_indexing_service() -> CSRIndexingService:
+    return CSRIndexingService()
+
+
+def get_search_service() -> CSRSemanticSearchService:
+    return CSRSemanticSearchService()
 
 
 @router.post(
@@ -102,3 +113,42 @@ async def classify_document(
 ):
     """Classifies preprocessed CSR data for community WASH relevance."""
     return service.classify_preprocessed_document(preprocessed_result)
+
+
+@router.post(
+    "/index",
+    response_model=IndexingResult,
+    summary="Index preprocessed CSR document into ChromaDB vector knowledge layer (Task 7)",
+    description=(
+        "Consumes Task 5 preprocessed CSR document. Chunks narrative text by page, "
+        "chunks individual CSR project records, generates vector embeddings, and performs "
+        "idempotent upsert into persistent ChromaDB with rich evidence traceability metadata."
+    ),
+)
+async def index_document(
+    preprocessed_result: CSRPreprocessingResult,
+    indexer: CSRIndexingService = Depends(get_indexing_service),
+):
+    """Indexes preprocessed CSR document chunks into ChromaDB."""
+    return indexer.index_document(preprocessed_result)
+
+
+@router.post(
+    "/search",
+    response_model=SearchResult,
+    summary="Execute semantic vector search over CSR document chunks (Task 7)",
+    description=(
+        "Performs nearest-neighbor semantic search over indexed document chunks in ChromaDB. "
+        "Supports metadata filtering by company_name, financial_year, document_version, is_latest, etc."
+    ),
+)
+async def search_documents(
+    search_request: SearchQueryRequest,
+    retriever: CSRSemanticSearchService = Depends(get_search_service),
+):
+    """Retrieves relevant CSR document chunks based on semantic similarity."""
+    return retriever.search(
+        query=search_request.query,
+        filters=search_request.filters,
+        top_k=search_request.top_k,
+    )
