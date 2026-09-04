@@ -1,5 +1,38 @@
 # Changelog
 
+## 2026-09-04 — Lead Management
+
+**Feature:** Backend Lead Management module for fundraising prospect tracking (company-linked leads, notes, activities, assignment).
+
+**Files created:**
+- `src/validators/leadValidator.js`
+- `src/services/leadService.js`
+- `src/controllers/leadController.js`
+- `src/routes/leadRoutes.js`
+- `src/tests/lead.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `/api/leads`
+- `package.json` — added `test:leads`
+
+**Endpoints:**
+- `POST /api/leads` — create lead from company
+- `GET /api/leads` — list with pagination, search, filters, sorting
+- `GET /api/leads/:leadId` — detail with notes and activities
+- `PATCH /api/leads/:leadId` — update status, priority, assignment (admin)
+- `PATCH /api/leads/:leadId/assign` — assign to staff (admin)
+- `DELETE /api/leads/:leadId` — archive active lead to LOST
+- `POST/GET /api/leads/:leadId/notes`
+- `POST/GET /api/leads/:leadId/activities`
+
+**Tests:** `npm run test:leads`; auth, invitation, and password-reset suites re-run for regression.
+
+**Assumptions:**
+- New leads default `assignedTo` to creator (schema requires assignee).
+- DELETE archives active leads to `LOST` instead of physical deletion.
+- `STATUS_CHANGED` activities are system-generated on status updates.
+- Staff may view all leads; updates/notes/activities require assigned-or-creator access.
+
 ## 2026-09-04 — Password Reset
 
 **Feature:** Secure forgot-password and reset-password flow with one-time hashed tokens and session revocation.

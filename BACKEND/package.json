@@ -11,6 +11,7 @@
     "test:invitations": "node --test src/tests/invitation.test.js",
     "test:auth": "node --test src/tests/auth.test.js",
     "test:password-reset": "node --test src/tests/passwordReset.test.js",
+    "test:leads": "node --test src/tests/lead.test.js",
     "bootstrap:admin": "node src/scripts/bootstrapAdmin.js"
   },
   "keywords": [
