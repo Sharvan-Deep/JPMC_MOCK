@@ -57,6 +57,18 @@ from ai_service.schemas.copilot import (
     RecommendationRequest,
     RecommendationResult,
 )
+from ai_service.schemas.outreach import (
+    ApproveDraftRequest,
+    ClaimValidationResult,
+    CompanyOutreachContext,
+    DraftRevision,
+    EditDraftRequest,
+    GenerateDraftRequest,
+    OutreachApprovalStatus,
+    OutreachDraft,
+    SendAuditRecord,
+    SendDraftRequest,
+)
 
 __all__ = [
     "HealthResponse",
@@ -104,6 +116,16 @@ __all__ = [
     "RecommendationHistoryResponse",
     "CopilotChatRequest",
     "CopilotChatResponse",
+    "OutreachApprovalStatus",
+    "CompanyOutreachContext",
+    "ClaimValidationResult",
+    "DraftRevision",
+    "OutreachDraft",
+    "GenerateDraftRequest",
+    "EditDraftRequest",
+    "ApproveDraftRequest",
+    "SendDraftRequest",
+    "SendAuditRecord",
 ]
 
 
