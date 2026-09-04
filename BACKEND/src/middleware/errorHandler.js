@@ -11,6 +11,7 @@ function errorHandler(err, _req, res, _next) {
       message: err.message,
       ...(err.code ? { code: err.code } : {}),
       ...(err.errors ? { errors: err.errors } : {}),
+      ...(err.details ? { details: err.details } : {}),
     });
   }
 

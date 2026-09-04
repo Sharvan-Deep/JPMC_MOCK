@@ -55,6 +55,22 @@ const LEAD_ACTIVITY_TYPES = Object.freeze({
   OTHER: 'OTHER',
 });
 
+const OUTREACH_DRAFT_STATUSES = Object.freeze({
+  DRAFT: 'DRAFT',
+  VALIDATED: 'VALIDATED',
+  APPROVED: 'APPROVED',
+  SENT: 'SENT',
+  FAILED: 'FAILED',
+});
+
+const AI_ERROR_CODES = Object.freeze({
+  AI_UNAVAILABLE: 'AI_UNAVAILABLE',
+  AI_TIMEOUT: 'AI_TIMEOUT',
+  AI_VALIDATION: 'AI_VALIDATION',
+  AI_FORBIDDEN: 'AI_FORBIDDEN',
+  AI_ERROR: 'AI_ERROR',
+});
+
 /**
  * Expected headers for 03_company_ai_ready_summary.csv (authoritative company dataset).
  */
@@ -75,6 +91,19 @@ const COMPANY_CSV_HEADERS = Object.freeze([
   'source_retrieved_date',
 ]);
 
+/**
+ * Expected headers for the detailed CSR activity CSV.
+ */
+const CSR_ACTIVITY_CSV_HEADERS = Object.freeze([
+  'Company Name',
+  'Financial Year',
+  'PSU/Non-PSU',
+  'CSR State',
+  'CSR Development Sector',
+  'CSR Sub Development Sector',
+  'Project Amount Spent (In INR Cr.)',
+]);
+
 module.exports = {
   USER_ROLES,
   INVITATION_STATUSES,
@@ -85,4 +114,7 @@ module.exports = {
   LEAD_PRIORITIES,
   LEAD_ACTIVITY_TYPES,
   COMPANY_CSV_HEADERS,
+  CSR_ACTIVITY_CSV_HEADERS,
+  OUTREACH_DRAFT_STATUSES,
+  AI_ERROR_CODES,
 };

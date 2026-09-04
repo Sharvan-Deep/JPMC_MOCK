@@ -89,6 +89,22 @@ const companySchema = new mongoose.Schema(
     source_retrieved_date: {
       type: Date,
     },
+    /**
+     * Structured AI analysis snapshot (classification/search/index results).
+     * Algorithms live in the Python AI service; this is persistence only.
+     */
+    aiReadySummary: {
+      type: mongoose.Schema.Types.Mixed,
+    },
+    leadScore: {
+      type: mongoose.Schema.Types.Mixed,
+    },
+    freshness: {
+      type: mongoose.Schema.Types.Mixed,
+    },
+    latestRecommendation: {
+      type: mongoose.Schema.Types.Mixed,
+    },
   },
   {
     timestamps: true,
@@ -112,5 +128,6 @@ companySchema.index({ total_sanitation_spend_crore: -1 });
 companySchema.index({ wash_record_count: -1 });
 companySchema.index({ states: 1 });
 companySchema.index({ csr_sectors: 1 });
+companySchema.index({ 'leadScore.total_score': -1 });
 
 module.exports = mongoose.model('Company', companySchema);
