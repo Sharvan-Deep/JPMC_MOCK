@@ -1,0 +1,52 @@
+# AUTHENTICATION
+POST   /api/auth/google
+POST   /api/auth/send-otp
+POST   /api/auth/verify-otp
+GET    /api/auth/me
+POST   /api/auth/logout
+
+# USERS
+GET    /api/users
+GET    /api/users/{userId}
+POST   /api/users
+PATCH  /api/users/{userId}
+DELETE /api/users/{userId}
+PATCH  /api/users/{userId}/role
+PATCH  /api/users/{userId}/status
+
+# COMPANIES
+GET    /api/companies
+GET    /api/companies/{companyId}
+GET    /api/companies/{companyId}/summary
+
+# CSR
+GET    /api/companies/{companyId}/csr
+GET    /api/companies/{companyId}/csr/policies
+GET    /api/companies/{companyId}/csr/policies/{policyId}
+GET    /api/companies/{companyId}/csr/activities
+GET    /api/companies/{companyId}/csr/activities/{activityId}
+GET    /api/companies/{companyId}/sources
+
+# LEADS
+GET    /api/leads
+POST   /api/leads
+GET    /api/leads/{leadId}
+PATCH  /api/leads/{leadId}
+DELETE /api/leads/{leadId}
+PATCH  /api/leads/{leadId}/assign
+POST   /api/leads/{leadId}/notes
+GET    /api/leads/{leadId}/notes
+POST   /api/leads/{leadId}/activities
+GET    /api/leads/{leadId}/activities
+
+# DASHBOARD
+GET    /api/dashboard/summary
+GET    /api/dashboard/top-prospects
+GET    /api/dashboard/recent-leads
+GET    /api/dashboard/follow-ups
+
+# DATA
+POST   /api/data/import/companies
+POST   /api/data/import/csr
+POST   /api/data/sync
+GET    /api/data/sync/status
