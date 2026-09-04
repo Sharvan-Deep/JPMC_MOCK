@@ -8,6 +8,19 @@ const USER_ROLES = Object.freeze({
   FUNDRAISING_STAFF: 'FUNDRAISING_STAFF',
 });
 
+const INVITATION_STATUSES = Object.freeze({
+  PENDING: 'PENDING',
+  ACCEPTED: 'ACCEPTED',
+  EXPIRED: 'EXPIRED',
+  REVOKED: 'REVOKED',
+});
+
+/** Default role assigned to admin-created invitations. */
+const DEFAULT_INVITATION_ROLE = USER_ROLES.FUNDRAISING_STAFF;
+
+/** Required CSV headers for bulk invitation import. */
+const INVITATION_CSV_HEADERS = Object.freeze(['name', 'email']);
+
 const LEAD_STATUSES = Object.freeze({
   NEW: 'NEW',
   CONTACTED: 'CONTACTED',
@@ -64,6 +77,9 @@ const COMPANY_CSV_HEADERS = Object.freeze([
 
 module.exports = {
   USER_ROLES,
+  INVITATION_STATUSES,
+  DEFAULT_INVITATION_ROLE,
+  INVITATION_CSV_HEADERS,
   LEAD_STATUSES,
   ACTIVE_LEAD_STATUSES,
   LEAD_PRIORITIES,
