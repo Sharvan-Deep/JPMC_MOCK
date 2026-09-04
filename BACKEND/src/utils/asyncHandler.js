@@ -1,5 +1,5 @@
 /**
- * Wraps async route handlers and forwards errors to Express error middleware.
+ * Wrap async route handlers so rejected promises reach Express error middleware.
  */
 function asyncHandler(fn) {
   return (req, res, next) => {

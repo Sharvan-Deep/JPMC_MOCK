@@ -1,3 +1,5 @@
+const { AppError } = require('../utils/errors');
+
 const DEFAULT_PAGE = 1;
 const DEFAULT_LIMIT = 20;
 const MAX_LIMIT = 100;
@@ -27,16 +29,12 @@ function parseCompanyListQuery(query) {
 
   const sortBy = query.sortBy ? String(query.sortBy).trim() : 'company_name';
   if (!ALLOWED_SORT_FIELDS.includes(sortBy)) {
-    const error = new Error(`Invalid sortBy. Allowed values: ${ALLOWED_SORT_FIELDS.join(', ')}`);
-    error.statusCode = 400;
-    throw error;
+    throw new AppError(`Invalid sortBy. Allowed values: ${ALLOWED_SORT_FIELDS.join(', ')}`, 400);
   }
 
   const sortOrderRaw = query.sortOrder ? String(query.sortOrder).trim().toLowerCase() : DEFAULT_SORT_ORDER;
   if (sortOrderRaw !== 'asc' && sortOrderRaw !== 'desc') {
-    const error = new Error('Invalid sortOrder. Allowed values: asc, desc');
-    error.statusCode = 400;
-    throw error;
+    throw new AppError('Invalid sortOrder. Allowed values: asc, desc', 400);
   }
 
   return {

@@ -1,4 +1,5 @@
 const { Company } = require('../models');
+const { AppError } = require('../utils/errors');
 const { isValidObjectId } = require('../utils/objectId');
 
 /**
@@ -35,6 +36,7 @@ function buildListFilter({ search, latestFinancialYear, state, csrSector }) {
 
 /**
  * Map a company document to a public API shape (excludes internal fields).
+ * AI snapshots such as leadScore/freshness/latestRecommendation are retained on detail.
  */
 function toPublicCompany(doc) {
   if (!doc) {
@@ -46,7 +48,7 @@ function toPublicCompany(doc) {
 }
 
 /**
- * Map a company document to a concise summary shape.
+ * Map a company document to a concise WASH summary shape.
  */
 function toCompanySummary(doc) {
   return {
@@ -70,6 +72,7 @@ function toCompanySummary(doc) {
 
 /**
  * List companies with pagination, search, filters, and sorting.
+ * Bulky `aiReadySummary` is omitted from list rows.
  */
 async function listCompanies(options) {
   const filter = buildListFilter(options);
@@ -78,7 +81,7 @@ async function listCompanies(options) {
 
   const [companies, total] = await Promise.all([
     Company.find(filter)
-      .select('-companyNameKey -__v')
+      .select('-companyNameKey -__v -aiReadySummary')
       .sort({ [options.sortBy]: sortDirection })
       .skip(skip)
       .limit(options.limit)
@@ -102,17 +105,13 @@ async function listCompanies(options) {
  */
 async function getCompanyById(companyId) {
   if (!isValidObjectId(companyId)) {
-    const error = new Error('Invalid company ID');
-    error.statusCode = 400;
-    throw error;
+    throw new AppError('Invalid company ID', 400);
   }
 
   const company = await Company.findById(companyId).select('-companyNameKey -__v').lean();
 
   if (!company) {
-    const error = new Error('Company not found');
-    error.statusCode = 404;
-    throw error;
+    throw new AppError('Company not found', 404);
   }
 
   return toPublicCompany(company);
@@ -123,9 +122,7 @@ async function getCompanyById(companyId) {
  */
 async function getCompanySummary(companyId) {
   if (!isValidObjectId(companyId)) {
-    const error = new Error('Invalid company ID');
-    error.statusCode = 400;
-    throw error;
+    throw new AppError('Invalid company ID', 400);
   }
 
   const company = await Company.findById(companyId)
@@ -135,9 +132,7 @@ async function getCompanySummary(companyId) {
     .lean();
 
   if (!company) {
-    const error = new Error('Company not found');
-    error.statusCode = 404;
-    throw error;
+    throw new AppError('Company not found', 404);
   }
 
   return toCompanySummary(company);
