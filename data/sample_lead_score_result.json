@@ -1,0 +1,429 @@
+[
+  {
+    "company": "INDIAN OIL CORPORATION LIMITED",
+    "total_score": 98.0,
+    "priority_band": "HIGH_PRIORITY",
+    "components": {
+      "wash_relevance": {
+        "name": "wash_relevance",
+        "points_awarded": 30.0,
+        "max_points": 30.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Company is fully WASH relevant under Task 6 classification (safe_drinking_water, sanitation).",
+        "evidence_sources": [
+          "Classification: WASH_RELEVANT",
+          "Subcategories: safe_drinking_water, sanitation"
+        ]
+      },
+      "wash_spending": {
+        "name": "wash_spending",
+        "points_awarded": 20.0,
+        "max_points": 20.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Very strong WASH financial commitment: \u20b999.4 Cr (38.4% of total CSR).",
+        "evidence_sources": [
+          "WASH Spend: \u20b999.4 Cr",
+          "Total CSR: \u20b9258.8 Cr"
+        ]
+      },
+      "freshness": {
+        "name": "freshness",
+        "points_awarded": 15.0,
+        "max_points": 15.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+        "evidence_sources": [
+          "Task 10 Status: GREEN"
+        ]
+      },
+      "multi_year_commitment": {
+        "name": "multi_year_commitment",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+        "evidence_sources": [
+          "Multi-Year: True",
+          "Continuing Project: None"
+        ]
+      },
+      "historical_track_record": {
+        "name": "historical_track_record",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Exceptional multi-year track record across 7 active financial years (\u20b9258.82 Cr cumulative MCA spend).",
+        "evidence_sources": [
+          "Active Years: 7",
+          "MCA Record Count: 252"
+        ]
+      },
+      "geographic_alignment": {
+        "name": "geographic_alignment",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "High alignment with Jaldhaara operational regions (Gujarat, Maharashtra, Rajasthan, Uttar Pradesh).",
+        "evidence_sources": [
+          "Overlap: Gujarat, Maharashtra, Rajasthan, Uttar Pradesh",
+          "Locations: Rajasthan, Maharashtra, Gujarat, Uttar Pradesh"
+        ]
+      },
+      "recent_trend": {
+        "name": "recent_trend",
+        "points_awarded": 3.0,
+        "max_points": 5.0,
+        "percentage": 60.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 9 verified consistent, stable WASH engagement.",
+        "evidence_sources": [
+          "Task 9 Direction: STABLE"
+        ]
+      }
+    },
+    "positive_factors": [
+      "+ Wash Relevance (30.0/30.0): Company is fully WASH relevant under Task 6 classification (safe_drinking_water, sanitation).",
+      "+ Wash Spending (20.0/20.0): Very strong WASH financial commitment: \u20b999.4 Cr (38.4% of total CSR).",
+      "+ Freshness (15.0/15.0): Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+      "+ Multi Year Commitment (10.0/10.0): Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+      "+ Historical Track Record (10.0/10.0): Exceptional multi-year track record across 7 active financial years (\u20b9258.82 Cr cumulative MCA spend).",
+      "+ Geographic Alignment (10.0/10.0): High alignment with Jaldhaara operational regions (Gujarat, Maharashtra, Rajasthan, Uttar Pradesh)."
+    ],
+    "limiting_factors": [],
+    "missing_information": [],
+    "evidence_coverage": 1.0,
+    "scoring_version": "v1",
+    "scored_at": "2026-09-04T10:50:47Z",
+    "metadata": {
+      "mca_matched": true,
+      "mca_rank": 1,
+      "target_states_count": 15
+    }
+  },
+  {
+    "company": "TATA CHEMICALS LIMITED",
+    "total_score": 96.0,
+    "priority_band": "HIGH_PRIORITY",
+    "components": {
+      "wash_relevance": {
+        "name": "wash_relevance",
+        "points_awarded": 30.0,
+        "max_points": 30.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Company is fully WASH relevant under Task 6 classification (safe_drinking_water, sanitation, water_access).",
+        "evidence_sources": [
+          "Classification: WASH_RELEVANT",
+          "Subcategories: safe_drinking_water, sanitation, water_access"
+        ]
+      },
+      "wash_spending": {
+        "name": "wash_spending",
+        "points_awarded": 20.0,
+        "max_points": 20.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Very strong WASH financial commitment: \u20b911.5 Cr (35.9% of total CSR).",
+        "evidence_sources": [
+          "WASH Spend: \u20b911.5 Cr",
+          "Total CSR: \u20b932.0 Cr",
+          "Water: \u20b97.5 Cr",
+          "Sanitation: \u20b94.0 Cr"
+        ]
+      },
+      "freshness": {
+        "name": "freshness",
+        "points_awarded": 15.0,
+        "max_points": 15.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+        "evidence_sources": [
+          "Task 10 Status: GREEN"
+        ]
+      },
+      "multi_year_commitment": {
+        "name": "multi_year_commitment",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+        "evidence_sources": [
+          "Multi-Year: True",
+          "Continuing Project: True"
+        ]
+      },
+      "historical_track_record": {
+        "name": "historical_track_record",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Exceptional multi-year track record across 6 active financial years.",
+        "evidence_sources": [
+          "Active Years: 6"
+        ]
+      },
+      "geographic_alignment": {
+        "name": "geographic_alignment",
+        "points_awarded": 6.0,
+        "max_points": 10.0,
+        "percentage": 60.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Moderate alignment in core target states (Gujarat, Maharashtra).",
+        "evidence_sources": [
+          "Overlap: Gujarat, Maharashtra",
+          "Locations: Maharashtra, Gujarat"
+        ]
+      },
+      "recent_trend": {
+        "name": "recent_trend",
+        "points_awarded": 5.0,
+        "max_points": 5.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 9 verified positive trend: INCREASED WASH engagement.",
+        "evidence_sources": [
+          "Task 9 Direction: INCREASED"
+        ]
+      }
+    },
+    "positive_factors": [
+      "+ Wash Relevance (30.0/30.0): Company is fully WASH relevant under Task 6 classification (safe_drinking_water, sanitation, water_access).",
+      "+ Wash Spending (20.0/20.0): Very strong WASH financial commitment: \u20b911.5 Cr (35.9% of total CSR).",
+      "+ Freshness (15.0/15.0): Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+      "+ Multi Year Commitment (10.0/10.0): Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+      "+ Historical Track Record (10.0/10.0): Exceptional multi-year track record across 6 active financial years.",
+      "+ Recent Trend (5.0/5.0): Task 9 verified positive trend: INCREASED WASH engagement."
+    ],
+    "limiting_factors": [],
+    "missing_information": [],
+    "evidence_coverage": 1.0,
+    "scoring_version": "v1",
+    "scored_at": "2026-09-04T10:50:47Z",
+    "metadata": {
+      "mca_matched": false,
+      "mca_rank": null,
+      "target_states_count": 15
+    }
+  },
+  {
+    "company": "HINDUSTAN ZINC LIMITED",
+    "total_score": 83.0,
+    "priority_band": "HIGH_PRIORITY",
+    "components": {
+      "wash_relevance": {
+        "name": "wash_relevance",
+        "points_awarded": 30.0,
+        "max_points": 30.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Company is fully WASH relevant under Task 6 classification (safe_drinking_water).",
+        "evidence_sources": [
+          "Classification: WASH_RELEVANT",
+          "Subcategories: safe_drinking_water"
+        ]
+      },
+      "wash_spending": {
+        "name": "wash_spending",
+        "points_awarded": 20.0,
+        "max_points": 20.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Very strong WASH financial commitment: \u20b950.7 Cr (97.5% of total CSR).",
+        "evidence_sources": [
+          "WASH Spend: \u20b950.7 Cr",
+          "Total CSR: \u20b952.0 Cr"
+        ]
+      },
+      "freshness": {
+        "name": "freshness",
+        "points_awarded": 7.0,
+        "max_points": 15.0,
+        "percentage": 46.7,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 10 status is YELLOW: data is from a prior financial year or awaiting current verification.",
+        "evidence_sources": [
+          "Task 10 Status: YELLOW"
+        ]
+      },
+      "multi_year_commitment": {
+        "name": "multi_year_commitment",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+        "evidence_sources": [
+          "Multi-Year: True",
+          "Continuing Project: None"
+        ]
+      },
+      "historical_track_record": {
+        "name": "historical_track_record",
+        "points_awarded": 7.0,
+        "max_points": 10.0,
+        "percentage": 70.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Strong historical track record across 4 active financial years (\u20b952.01 Cr cumulative MCA spend).",
+        "evidence_sources": [
+          "Active Years: 4",
+          "MCA Record Count: 8"
+        ]
+      },
+      "geographic_alignment": {
+        "name": "geographic_alignment",
+        "points_awarded": 6.0,
+        "max_points": 10.0,
+        "percentage": 60.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Moderate alignment in core target states (Rajasthan).",
+        "evidence_sources": [
+          "Overlap: Rajasthan",
+          "Locations: Rajasthan"
+        ]
+      },
+      "recent_trend": {
+        "name": "recent_trend",
+        "points_awarded": 3.0,
+        "max_points": 5.0,
+        "percentage": 60.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 9 verified consistent, stable WASH engagement.",
+        "evidence_sources": [
+          "Task 9 Direction: STABLE"
+        ]
+      }
+    },
+    "positive_factors": [
+      "+ Wash Relevance (30.0/30.0): Company is fully WASH relevant under Task 6 classification (safe_drinking_water).",
+      "+ Wash Spending (20.0/20.0): Very strong WASH financial commitment: \u20b950.7 Cr (97.5% of total CSR).",
+      "+ Multi Year Commitment (10.0/10.0): Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+      "+ Historical Track Record (7.0/10.0): Strong historical track record across 4 active financial years (\u20b952.01 Cr cumulative MCA spend)."
+    ],
+    "limiting_factors": [],
+    "missing_information": [],
+    "evidence_coverage": 1.0,
+    "scoring_version": "v1",
+    "scored_at": "2026-09-04T10:50:47Z",
+    "metadata": {
+      "mca_matched": true,
+      "mca_rank": 6,
+      "target_states_count": 15
+    }
+  },
+  {
+    "company": "MEGA FINANCIAL HOLDINGS LTD",
+    "total_score": 31.0,
+    "priority_band": "VERY_LOW_PRIORITY",
+    "components": {
+      "wash_relevance": {
+        "name": "wash_relevance",
+        "points_awarded": 0.0,
+        "max_points": 30.0,
+        "percentage": 0.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Company CSR portfolio shows no alignment with WASH sectors.",
+        "evidence_sources": [
+          "Classification: NOT_WASH_RELEVANT"
+        ]
+      },
+      "wash_spending": {
+        "name": "wash_spending",
+        "points_awarded": 0.0,
+        "max_points": 20.0,
+        "percentage": 0.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Zero WASH financial commitment: \u20b90.0 Cr (0.0% of total CSR).",
+        "evidence_sources": [
+          "WASH Spend: \u20b90.0 Cr",
+          "Total CSR: \u20b9350.0 Cr"
+        ]
+      },
+      "freshness": {
+        "name": "freshness",
+        "points_awarded": 15.0,
+        "max_points": 15.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+        "evidence_sources": [
+          "Task 10 Status: GREEN"
+        ]
+      },
+      "multi_year_commitment": {
+        "name": "multi_year_commitment",
+        "points_awarded": 10.0,
+        "max_points": 10.0,
+        "percentage": 100.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Strong multi-year commitment demonstrated with ongoing multi-year programs.",
+        "evidence_sources": [
+          "Multi-Year: True",
+          "Continuing Project: None"
+        ]
+      },
+      "historical_track_record": {
+        "name": "historical_track_record",
+        "points_awarded": 0.0,
+        "max_points": 10.0,
+        "percentage": 0.0,
+        "is_insufficient_evidence": true,
+        "rationale": "No historical MCA WASH records found for this company.",
+        "evidence_sources": [
+          "MCA Historical: Not found"
+        ]
+      },
+      "geographic_alignment": {
+        "name": "geographic_alignment",
+        "points_awarded": 6.0,
+        "max_points": 10.0,
+        "percentage": 60.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Moderate alignment in core target states (Maharashtra).",
+        "evidence_sources": [
+          "Overlap: Maharashtra",
+          "Locations: Maharashtra"
+        ]
+      },
+      "recent_trend": {
+        "name": "recent_trend",
+        "points_awarded": 0.0,
+        "max_points": 5.0,
+        "percentage": 0.0,
+        "is_insufficient_evidence": false,
+        "rationale": "Task 9 verified complete cessation / loss of WASH focus.",
+        "evidence_sources": [
+          "Task 9 Direction: LOST_FOCUS"
+        ]
+      }
+    },
+    "positive_factors": [
+      "+ Freshness (15.0/15.0): Task 10 verified GREEN: information verified against latest available disclosure cycle.",
+      "+ Multi Year Commitment (10.0/10.0): Strong multi-year commitment demonstrated with ongoing multi-year programs."
+    ],
+    "limiting_factors": [
+      "- Wash Relevance (0.0/30.0): Company CSR portfolio shows no alignment with WASH sectors.",
+      "- Wash Spending (0.0/20.0): Zero WASH financial commitment: \u20b90.0 Cr (0.0% of total CSR).",
+      "- Recent Trend (0.0/5.0): Task 9 verified complete cessation / loss of WASH focus."
+    ],
+    "missing_information": [
+      "Historical Track Record: No historical MCA WASH records found for this company."
+    ],
+    "evidence_coverage": 0.86,
+    "scoring_version": "v1",
+    "scored_at": "2026-09-04T10:50:47Z",
+    "metadata": {
+      "mca_matched": false,
+      "mca_rank": null,
+      "target_states_count": 15
+    }
+  }
+]

@@ -39,6 +39,15 @@ from ai_service.schemas.freshness import (
     SourceFreshnessRecord,
     SourceType,
 )
+from ai_service.schemas.scoring import (
+    BatchScoringRequest,
+    BatchScoringResponse,
+    CandidateScoringInput,
+    LeadScore,
+    PriorityBand,
+    ScoreComponentItem,
+    ScoringComponentsBreakdown,
+)
 
 __all__ = [
     "HealthResponse",
@@ -73,6 +82,14 @@ __all__ = [
     "FreshnessAssessment",
     "FreshnessHistoryResponse",
     "FreshnessCalculationRequest",
+    "PriorityBand",
+    "ScoreComponentItem",
+    "ScoringComponentsBreakdown",
+    "CandidateScoringInput",
+    "LeadScore",
+    "BatchScoringRequest",
+    "BatchScoringResponse",
 ]
+
 
 

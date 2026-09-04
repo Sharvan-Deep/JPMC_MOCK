@@ -47,12 +47,40 @@ class Settings(BaseSettings):
         default="models/text-embedding-004", description="Embedding model identifier"
     )
 
+    # Lead Scoring Configuration (Task 11)
+    SCORING_VERSION: str = Field(default="v1", description="Lead scoring algorithm version")
+    MCA_CANDIDATES_CSV_PATH: str = Field(
+        default="JALDHAARA FOUNDATION/Jaldhaara_Ai/data/processed/04_top_500_mca_candidates.csv",
+        description="Path to processed Top 500 MCA candidates CSV",
+    )
+    JALDHAARA_TARGET_STATES: list[str] = Field(
+        default=[
+            "Gujarat",
+            "Maharashtra",
+            "Rajasthan",
+            "Karnataka",
+            "Telangana",
+            "Andhra Pradesh",
+            "Madhya Pradesh",
+            "West Bengal",
+            "Odisha",
+            "Bihar",
+            "Uttar Pradesh",
+            "Jharkhand",
+            "Haryana",
+            "Tamil Nadu",
+            "Delhi",
+        ],
+        description="Target operating states for Jaldhaara Foundation initiatives",
+    )
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
         extra="ignore",
         case_sensitive=False,
     )
+
 
     @field_validator("AI_SERVICE_PORT")
     @classmethod
