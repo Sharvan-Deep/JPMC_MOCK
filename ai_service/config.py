@@ -40,6 +40,12 @@ class Settings(BaseSettings):
     CHROMADB_COLLECTION: str = Field(
         default="csr_documents", description="ChromaDB vector collection name"
     )
+    CHROMADB_STORAGE_PATH: str = Field(
+        default="data/chromadb", description="Persistent local ChromaDB storage path"
+    )
+    EMBEDDING_MODEL_NAME: str = Field(
+        default="models/text-embedding-004", description="Embedding model identifier"
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env",
