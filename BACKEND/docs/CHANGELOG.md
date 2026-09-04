@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-09-04 — CSR Policy + Source APIs
+
+**Feature:** Read-only CSR policy and source traceability endpoints nested under company routes.
+
+**Files created:**
+- `src/validators/csrValidator.js`
+- `src/services/csrService.js`
+- `src/controllers/csrController.js`
+- `src/routes/csrRoutes.js`
+- `src/tests/csr.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `/api/companies/:companyId` CSR/source routes
+- `package.json` — added `test:csr`
+
+**Endpoints:**
+- `GET /api/companies/:companyId/csr` — CSR overview + WASH summary
+- `GET /api/companies/:companyId/csr/policies` — paginated policy list
+- `GET /api/companies/:companyId/csr/policies/:policyId` — single policy
+- `GET /api/companies/:companyId/sources` — paginated source list
+
+**Tests:** `npm run test:csr`; auth and invitation suites for regression.
+
+**Assumptions/blockers:**
+- CSRPolicy/Source collections may be empty until ingestion; endpoints return empty arrays.
+- Overview merges company CSV WASH summary with stored policy/source counts; no AI analysis added.
+
 ## 2026-09-04 — Test data isolation for auth/invitation suites
 
 **Feature:** Tests create unique per-run emails and delete only those records.

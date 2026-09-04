@@ -10,6 +10,7 @@
     "test:mail": "node src/scripts/testMail.js",
     "test:invitations": "node --test src/tests/invitation.test.js",
     "test:auth": "node --test src/tests/auth.test.js",
+    "test:csr": "node --test src/tests/csr.test.js",
     "bootstrap:admin": "node src/scripts/bootstrapAdmin.js"
   },
   "keywords": [
