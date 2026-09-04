@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-09-04 — Password Reset
+
+**Feature:** Secure forgot-password and reset-password flow with one-time hashed tokens and session revocation.
+
+**Files created:**
+- `src/models/PasswordResetToken.js`
+- `src/services/passwordResetService.js`, `passwordResetEmailService.js`
+- `src/controllers/passwordResetController.js`
+- `src/validators/passwordResetValidator.js`
+- `src/utils/passwordResetHelpers.js`
+- `src/tests/passwordReset.test.js`
+
+**Files modified:**
+- `src/routes/authRoutes.js` — `POST /forgot-password`, `POST /reset-password`
+- `src/models/index.js`
+- `.env.example` — `PASSWORD_RESET_EXPIRES_HOURS`, `PASSWORD_RESET_COOLDOWN_MINUTES`
+- `package.json` — `test:password-reset`
+
+**Security behavior:**
+- SHA-256 hashed one-time reset tokens; generic forgot-password response
+- Reset revokes refresh sessions and invalidates other reset tokens
+- Cooldown prevents rapid reset-email requests
+
+**Tests:** `npm run test:password-reset`, plus auth/invitation regression suites.
+
+**Assumptions/blockers:** `FRONTEND_URL` required for reset links; user must log in again after reset.
+
 ## 2026-09-04 — Test data isolation for auth/invitation suites
 
 **Feature:** Tests create unique per-run emails and delete only those records.
