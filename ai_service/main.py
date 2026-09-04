@@ -12,6 +12,7 @@ from fastapi.responses import JSONResponse
 
 from ai_service.config import get_settings
 from ai_service.logging_config import logger
+from ai_service.routes.copilot import router as copilot_router
 from ai_service.routes.documents import router as documents_router
 from ai_service.routes.freshness import router as freshness_router
 from ai_service.routes.health import router as health_router
@@ -100,6 +101,7 @@ def create_app() -> FastAPI:
     app.include_router(documents_router)
     app.include_router(freshness_router)
     app.include_router(scoring_router)
+    app.include_router(copilot_router)
 
     return app
 

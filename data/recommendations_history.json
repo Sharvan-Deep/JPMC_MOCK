@@ -1,0 +1,55 @@
+{
+  "tata chemicals limited": [
+    {
+      "recommendation_id": "rec_bd9fac485785",
+      "company": "Tata Chemicals Limited",
+      "recommended_action": "APPROACH_WITH_PARTNERSHIP_PROPOSAL",
+      "confidence": 0.95,
+      "reasons": [
+        "Top-tier donor candidate (Score: 88.5, HIGH_PRIORITY) with current verified disclosures and demonstrated commitment to multi-year CSR infrastructure programs."
+      ],
+      "supporting_evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": null,
+          "document_version": null,
+          "page": 14,
+          "source_url": null,
+          "relevant_source_text": "TCSRD safe drinking water projects covering 45 villages with installation of 12 community RO plants in Gujarat.",
+          "document_hash": null
+        }
+      ],
+      "positive_factors": [
+        "High donor lead score of 88.5/100 indicating exceptional donor potential.",
+        "Current and verified CSR disclosures (GREEN freshness status).",
+        "WASH commitment trajectory is actively growing (INCREASED).",
+        "Demonstrated willingness to enter multi-year CSR commitments.",
+        "High verifiable evidence coverage (92.0%)."
+      ],
+      "limiting_factors": [],
+      "missing_information": [],
+      "risks": [],
+      "next_steps": [
+        "Formulate multi-year institutional partnership proposal focusing on water purification hubs.",
+        "Schedule exploratory dialogue with the CSR committee head / sustainability lead.",
+        "Present multi-year co-funding impact model aligned with corporate geographic priorities."
+      ],
+      "is_advisory": true,
+      "scoring_version": "v1",
+      "recommendation_version": "v1",
+      "created_at": "2026-09-04T11:04:42.149582+00:00",
+      "metadata": {
+        "lead_score": 88.5,
+        "priority_band": "HIGH_PRIORITY",
+        "freshness_status": "GREEN",
+        "wash_direction": "INCREASED",
+        "wash_classification": "WASH_FOCUSED",
+        "has_multi_year_commitment": true,
+        "evidence_coverage": 0.92,
+        "wash_spend_crore": 14.8,
+        "financial_year": "2023-24"
+      }
+    }
+  ]
+}
