@@ -194,5 +194,47 @@
         "sources_evaluated_count": 3
       }
     }
+  ],
+  "api test corp": [
+    {
+      "assessment_id": "63a6eeab-12af-41ed-9201-9879bbbc1ba1",
+      "company": "API Test Corp",
+      "status": "GREEN",
+      "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased).",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "source": "CSR_ANNUAL_REPORT",
+      "source_url": null,
+      "document_hash": null,
+      "publication_date": "2025-07-01",
+      "retrieved_at": "2026-09-04T10:50:10Z",
+      "verified_at": "2026-09-04T10:50:10Z",
+      "verification_cycle": "2026-09",
+      "wash_direction": "INCREASED",
+      "evidence": [],
+      "previous_status": null,
+      "sources": [
+        {
+          "source_name": "CSR_ANNUAL_REPORT 2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": "2025-07-01",
+          "retrieved_at": "2026-09-04T10:50:10Z",
+          "verified_at": "2026-09-04T10:50:10Z",
+          "financial_year": "2024-25",
+          "status": "GREEN",
+          "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased)."
+        }
+      ],
+      "assessment_metadata": {
+        "is_verified_current_cycle": true,
+        "is_current_reporting_cycle": true,
+        "document_available": true,
+        "sources_evaluated_count": 1
+      }
+    }
   ]
 }
