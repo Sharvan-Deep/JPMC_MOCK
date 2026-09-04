@@ -6,7 +6,21 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "import:companies": "node src/scripts/importCompanies.js"
+    "import:companies": "node src/scripts/importCompanies.js",
+    "import:csr-activities": "node src/scripts/importCsrActivities.js",
+    "test:mail": "node src/scripts/testMail.js",
+    "test:invitations": "node --test src/tests/invitation.test.js",
+    "test:auth": "node --test src/tests/auth.test.js",
+    "test:password-reset": "node --test src/tests/passwordReset.test.js",
+    "test:leads": "node --test src/tests/lead.test.js",
+    "test:dashboard": "node --test src/tests/dashboard.test.js",
+    "test:users": "node --test src/tests/user.test.js",
+    "test:csr": "node --test src/tests/csr.test.js",
+    "test:csr-import": "node --test src/tests/csrActivityImport.test.js",
+    "test:swagger": "node --test src/tests/swagger.test.js",
+    "test:companies": "node --test src/tests/company.test.js",
+    "test:ai": "node --test --test-concurrency=1 src/tests/aiService.test.js src/tests/companyAi.test.js src/tests/leadScoring.test.js src/tests/recommendation.test.js src/tests/outreach.test.js",
+    "bootstrap:admin": "node src/scripts/bootstrapAdmin.js"
   },
   "keywords": [
     "jaldhaara",
@@ -18,9 +32,16 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "csv-parse": "^5.6.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.9.5"
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.9.5",
+    "multer": "^2.3.0",
+    "nodemailer": "^10.0.0",
+    "swagger-ui-express": "^5.0.1"
   }
 }

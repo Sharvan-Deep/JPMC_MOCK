@@ -3,7 +3,7 @@ const { USER_ROLES } = require('../config/constants');
 
 /**
  * Application user (Admin or Fundraising Staff).
- * Authentication is via Google OAuth or Email OTP — no plain-text passwords.
+ * Accounts are provisioned via admin invitation; authentication modules are added separately.
  */
 const userSchema = new mongoose.Schema(
   {
@@ -20,6 +20,10 @@ const userSchema = new mongoose.Schema(
       lowercase: true,
       trim: true,
       maxlength: 255,
+    },
+    passwordHash: {
+      type: String,
+      select: false,
     },
     googleId: {
       type: String,
@@ -38,6 +42,10 @@ const userSchema = new mongoose.Schema(
     isActive: {
       type: Boolean,
       default: true,
+    },
+    isEmailVerified: {
+      type: Boolean,
+      default: false,
     },
     lastLoginAt: {
       type: Date,
