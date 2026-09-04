@@ -31,14 +31,73 @@ const sourceSchema = new mongoose.Schema(
     },
     retrievedAt: {
       type: Date,
+      default: Date.now,
+    },
+    // Document retrieval and versioning storage fields
+    documentType: {
+      type: String,
+      enum: ['annual_report', 'csr_policy', 'brsr', 'disclosure'],
+      trim: true,
+    },
+    financialYear: {
+      type: String,
+      trim: true,
+    },
+    title: {
+      type: String,
+      trim: true,
+      maxlength: 500,
+    },
+    localFilePath: {
+      type: String,
+      trim: true,
+    },
+    fileName: {
+      type: String,
+      trim: true,
+    },
+    fileSize: {
+      type: Number,
+      min: 0,
+    },
+    contentType: {
+      type: String,
+      trim: true,
+    },
+    sha256: {
+      type: String,
+      trim: true,
+    },
+    version: {
+      type: Number,
+      default: 1,
+      min: 1,
+    },
+    isLatest: {
+      type: Boolean,
+      default: true,
+    },
+    publishedDate: {
+      type: Date,
+    },
+    status: {
+      type: String,
+      enum: ['FOUND', 'NOT_FOUND', 'ERROR'],
+      default: 'FOUND',
+    },
+    errorInformation: {
+      type: String,
+      trim: true,
     },
   },
   {
-    timestamps: { createdAt: true, updatedAt: false },
+    timestamps: { createdAt: true, updatedAt: true },
   }
 );
 
 sourceSchema.index({ company: 1, createdAt: -1 });
 sourceSchema.index({ sourceType: 1 });
+sourceSchema.index({ company: 1, documentType: 1, financialYear: 1, version: -1 });
+sourceSchema.index({ sha256: 1 });
 
 module.exports = mongoose.model('Source', sourceSchema);

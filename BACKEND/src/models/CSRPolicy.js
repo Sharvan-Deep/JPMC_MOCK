@@ -38,6 +38,45 @@ const csrPolicySchema = new mongoose.Schema(
     },
     retrievedAt: {
       type: Date,
+      default: Date.now,
+    },
+    sha256: {
+      type: String,
+      trim: true,
+    },
+    localFilePath: {
+      type: String,
+      trim: true,
+    },
+    fileName: {
+      type: String,
+      trim: true,
+    },
+    fileSize: {
+      type: Number,
+      min: 0,
+    },
+    contentType: {
+      type: String,
+      trim: true,
+    },
+    version: {
+      type: Number,
+      default: 1,
+      min: 1,
+    },
+    isLatest: {
+      type: Boolean,
+      default: true,
+    },
+    status: {
+      type: String,
+      enum: ['FOUND', 'NOT_FOUND', 'ERROR'],
+      default: 'FOUND',
+    },
+    errorInformation: {
+      type: String,
+      trim: true,
     },
   },
   {
@@ -45,7 +84,8 @@ const csrPolicySchema = new mongoose.Schema(
   }
 );
 
-csrPolicySchema.index({ company: 1, financialYear: 1 });
+csrPolicySchema.index({ company: 1, financialYear: 1, version: -1 });
 csrPolicySchema.index({ company: 1, createdAt: -1 });
+csrPolicySchema.index({ sha256: 1 });
 
 module.exports = mongoose.model('CSRPolicy', csrPolicySchema);
