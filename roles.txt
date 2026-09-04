@@ -40,3 +40,15 @@ Fundraising Staff
            ┌──────────────────┐
            │ Fundraising Staff│
            └──────────────────┘
+
+
+
+Module	Purpose
+1. Authentication	Google + Email OTP
+2. User & Role Management	Admin / Fundraising Staff
+3. Company Management	Company discovery and profiles
+4. CSR & Historical Data	Policies, activities, WASH-related history
+5. AI Evaluation	Priority, score, reasons, recommendations
+6. Lead Management	Track promising donor companies
+7. Dashboard	Summary and prioritized prospects
+8. Data Ingestion	Import/update company & CSR data
