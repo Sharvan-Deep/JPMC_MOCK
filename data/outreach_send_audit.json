@@ -1,0 +1,30 @@
+[
+  {
+    "send_id": "snd_fb6916b7506d",
+    "draft_id": "draft_76984122484b",
+    "company": "Tata Chemicals Limited",
+    "approved_at": "2026-09-04T11:16:15.812823+00:00",
+    "approved_by": "Staff Member",
+    "sent_at": "2026-09-04T11:16:15.813952+00:00",
+    "recipient": "csr@tatachemicals.com",
+    "sender": "partnerships@jaldhaara.org",
+    "subject": "Exploring a WASH Strategic Partnership with Jaldhaara Foundation | Tata Chemicals Limited",
+    "final_body": "Dear Head of CSR & Sustainability,\n\nJaldhaara Foundation has tracked Tata Chemicals Limited's notable CSR initiatives in safe water and community health. We specialize in deploying sustainable, community-owned water purification infrastructure.\n\nIn particular, we noted your impactful water initiative: \"TCSRD safe drinking water projects covering 45 villages with installation of 12 community RO plants in Gujarat.\".\n\nWe would welcome a brief 15-minute conversation to explore aligning our safe drinking water hubs with your CSR goals.\n\nCould we schedule a call next week?\n\nPartnerships Team\nJaldhaara Foundation\nwww.jaldhaara.org",
+    "evidence_used": [
+      {
+        "company": "Tata Chemicals Limited",
+        "financial_year": "2023-24",
+        "document_type": null,
+        "document_version": null,
+        "page": 14,
+        "source_url": null,
+        "relevant_source_text": "TCSRD safe drinking water projects covering 45 villages with installation of 12 community RO plants in Gujarat.",
+        "document_hash": null
+      }
+    ],
+    "recommendation_version": "v1",
+    "draft_version": 4,
+    "send_status": "SENT",
+    "error_message": null
+  }
+]
