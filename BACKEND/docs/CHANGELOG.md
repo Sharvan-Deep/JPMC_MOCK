@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-09-04 — User Management
+
+**Feature:** Admin-only user management for existing provisioned accounts.
+
+**Files created:**
+- `src/validators/userValidator.js`
+- `src/services/userService.js`
+- `src/controllers/userController.js`
+- `src/routes/userRoutes.js`
+- `src/tests/user.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `/api/users`
+- `package.json` — added `test:users`
+
+**Endpoints:**
+- `GET /api/users` — list with pagination, search, role/active filters, sorting
+- `GET /api/users/:userId` — safe user detail
+- `PATCH /api/users/:userId` — update name only
+- `PATCH /api/users/:userId/role` — change role
+- `PATCH /api/users/:userId/status` — activate/deactivate
+
+**Authorization:** All endpoints require `requireAuth` + `requireAdmin`.
+
+**Tests:** `npm run test:users`; auth, invitation, password-reset, and lead regression suites.
+
+**Assumptions:**
+- No public signup or direct user creation endpoints.
+- Admins cannot self-demote or self-deactivate; last active admin is protected.
+- Deactivated users are blocked by existing auth/login/refresh checks.
+
 ## 2026-09-04 — Dashboard APIs
 
 **Feature:** Read-only dashboard endpoints aggregating company, WASH, lead, and activity metrics.

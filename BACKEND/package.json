@@ -13,6 +13,7 @@
     "test:password-reset": "node --test src/tests/passwordReset.test.js",
     "test:leads": "node --test src/tests/lead.test.js",
     "test:dashboard": "node --test src/tests/dashboard.test.js",
+    "test:users": "node --test src/tests/user.test.js",
     "bootstrap:admin": "node src/scripts/bootstrapAdmin.js"
   },
   "keywords": [
