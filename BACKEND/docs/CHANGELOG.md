@@ -1,5 +1,120 @@
 # Changelog
 
+## 2026-09-04 — Task 14: Node.js ↔ Python AI service integration
+
+**Feature:** Authenticated Node gateway/orchestrator for the FastAPI AI service. MongoDB remains the structured system of record. AI algorithms stay in Python.
+
+**Files created:**
+- `src/config/ai.js`
+- `src/services/aiService.js`, `aiContextService.js`, `companyAiService.js`, `leadScoringService.js`, `recommendationService.js`, `outreachService.js`
+- `src/models/aiEvidenceSchema.js`, `CompanyFreshnessHistory.js`, `CompanyLeadScore.js`, `CompanyRecommendation.js`, `OutreachDraft.js`, `OutreachSendAudit.js`
+- `src/controllers/companyAiController.js`, `leadAiController.js`, `outreachController.js`
+- `src/routes/outreachRoutes.js`
+- `src/validators/aiIntegrationValidator.js`
+- `src/utils/aiErrors.js`, `aiEvidence.js`
+- `src/config/swagger/aiPaths.js`
+- `src/tests/aiService.test.js`, `companyAi.test.js`, `leadScoring.test.js`, `recommendation.test.js`, `outreach.test.js`, `helpers/httpRequest.js`
+- `docs/AI-INTEGRATION.md`
+
+**Files modified:**
+- `src/app.js`, `src/models/Company.js`, `src/models/index.js`, `src/config/constants.js`
+- `src/routes/companyRoutes.js`, `src/routes/leadRoutes.js`
+- `src/services/companyService.js` (exclude bulky `aiReadySummary` from list)
+- `src/utils/errors.js`, `src/middleware/errorHandler.js`
+- `src/config/swagger.js`, `src/config/swagger/schemas.js`, `src/tests/swagger.test.js`
+- `package.json`, `.env.example`
+
+**Integration summary:** Node calls `AI_SERVICE_URL` (default `http://localhost:8000`) with timeout handling. Product routes wrap documents, freshness, scoring, copilot, and outreach. Scores/recommendations/freshness/drafts/send audits persist in MongoDB. Lead.priority is not overwritten by AI. Sending requires human approval in Node and preserves AI 403.
+
+**Pending limitations:**
+- `POST /api/companies/discover` searches the AI index and matches existing companies by name; it does not crawl, import CSVs, or create companies.
+- Document extract/preprocess/index are available on the internal client but analyze uses validate + classify + search against stored CSR facts (no file-upload pipeline in Node yet).
+- Python request field names may still 422 if FastAPI models differ; errors are translated, not guessed.
+
+**Testing:** `npm run test:ai`, `npm run test:swagger`, plus existing backend suites. AI HTTP is mocked.
+
+---
+
+## 2026-09-04 — Company API route mounting fix
+
+**Feature:** Mount existing Company Management routes so runtime matches Swagger.
+
+**Root cause:** `companyRoutes` module was not registered in `app.js`; only CSR sub-routes were mounted under `/api/companies/:companyId`.
+
+**Files created:**
+- `src/routes/companyRoutes.js`
+- `src/controllers/companyController.js`
+- `src/services/companyService.js`
+- `src/validators/companyQueryValidator.js`
+- `src/utils/objectId.js`
+- `src/tests/company.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `companyRoutes` at `/api/companies` before CSR nested router
+- `package.json` — added `test:companies` script
+
+**Routes now mounted:**
+- `GET /api/companies`
+- `GET /api/companies/:companyId`
+- `GET /api/companies/:companyId/summary`
+
+**Notes:** `/:companyId/summary` is registered before `/:companyId`. CSR routes remain on `/api/companies/:companyId/*`. Swagger paths unchanged.
+
+**Testing:** `npm run test:companies`, `npm run test:csr`, `npm run test:swagger`
+
+---
+
+## 2026-09-04 — Swagger / OpenAPI documentation
+
+**Feature:** Interactive Swagger UI and OpenAPI 3.0 JSON for all existing backend endpoints.
+
+**Files created:**
+- `src/config/swagger.js`
+- `src/config/swagger/schemas.js`
+- `src/config/swagger/paths.js`
+- `src/tests/swagger.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `/api-docs` and `/api-docs.json`
+- `package.json` — added `swagger-ui-express`, `test:swagger` script
+
+**Notes:**
+- `bearerAuth` JWT scheme applied to protected routes; login, refresh, forgot/reset password, invitation verify/activate remain public.
+- Refresh/logout documented as cookie-based (`refreshToken` on `/api/auth` path).
+
+**Testing:** `npm run test:swagger` — verifies UI HTML, JSON spec, security metadata, and operation count.
+
+---
+
+## 2026-09-04 — CSR activity CSV import
+
+**Feature:** Import detailed CSR activity rows into `CSRActivity` and expose them on the company CSR overview.
+
+**Files created:**
+- `src/models/CSRActivity.js`
+- `src/services/csrActivityImportService.js`
+- `src/validators/csrActivityImportValidator.js`
+- `src/scripts/importCsrActivities.js`
+- `src/tests/csrActivityImport.test.js`
+- CSR API files restored onto this branch so `/api/companies/:companyId/csr` is available
+
+**Files modified:**
+- `src/models/index.js`
+- `src/config/constants.js`
+- `src/services/csrService.js` — overview includes imported activity totals
+- `src/app.js` — mounted CSR routes
+- `package.json` — `import:csr-activities`, `test:csr`, `test:csr-import`
+- `.env.example` — `CSR_ACTIVITY_CSV_PATH`
+
+**Notes:**
+- Matching uses existing `companyNameKey` (trim + lowercase). Unmatched names are skipped; no fake companies are created.
+- Idempotency uses a deterministic `uniquenessKey` of company + year + PSU + state + sector + sub-sector + spend.
+- Source metadata is upserted as `sourceType=CSV` on the existing Source model.
+
+**Pending:**
+- Company names that do not exactly match imported Company records remain unmatched until names are aligned.
+- The detailed CSV has no project ID, so identical rows collapse into one activity.
+
 ## 2026-09-04 — User Management
 
 **Feature:** Admin-only user management for existing provisioned accounts.

@@ -1,5 +1,6 @@
 const express = require('express');
 const leadController = require('../controllers/leadController');
+const leadAiController = require('../controllers/leadAiController');
 const asyncHandler = require('../utils/asyncHandler');
 const requireAuth = require('../middleware/requireAuth');
 const requireRole = require('../middleware/requireRole');
@@ -13,6 +14,8 @@ router.use(requireRole(USER_ROLES.ADMIN, USER_ROLES.FUNDRAISING_STAFF));
 
 router.post('/', asyncHandler(leadController.createLead));
 router.get('/', asyncHandler(leadController.listLeads));
+router.get('/top', asyncHandler(leadAiController.listTopLeads));
+router.post('/score-batch', asyncHandler(leadAiController.scoreLeadsBatch));
 
 router.get(
   '/:leadId',
@@ -60,6 +63,22 @@ router.get(
   '/:leadId/activities',
   validateObjectIdParam('leadId'),
   asyncHandler(leadController.listActivities)
+);
+
+router.post(
+  '/:leadId/score',
+  validateObjectIdParam('leadId'),
+  asyncHandler(leadAiController.scoreLead)
+);
+router.post(
+  '/:leadId/recommend',
+  validateObjectIdParam('leadId'),
+  asyncHandler(leadAiController.recommendLead)
+);
+router.post(
+  '/:leadId/outreach/generate',
+  validateObjectIdParam('leadId'),
+  asyncHandler(leadAiController.generateOutreach)
 );
 
 module.exports = router;
