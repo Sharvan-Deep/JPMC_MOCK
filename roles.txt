@@ -1,0 +1,42 @@
+1. Admin
+
+The Admin manages the system itself:
+
+Admin
+├── Manage Jaldhaara staff accounts
+├── Manage roles/access
+├── Manage company/data ingestion settings
+├── Monitor system/data status
+└── View overall system activity
+2. Fundraising Staff
+
+The Fundraising Staff is the primary operational user:
+
+Fundraising Staff
+├── Search companies
+├── Filter companies
+├── View company details
+├── View CSR information/history
+├── View AI priority/result
+├── Review AI reasoning/recommendations
+├── Select potential donor leads
+└── Manage donor outreach/leads
+
+                 ┌──────────────┐
+                 │    Admin     │
+                 └──────┬───────┘
+                        │
+                  manages users
+                        │
+                        ▼
+┌───────────────────────────────────────────┐
+│              BACKEND SYSTEM               │
+│                                           │
+│  Companies  CSR  History  AI  Leads       │
+│                                           │
+└───────────────────┬───────────────────────┘
+                    │
+                    ▼
+           ┌──────────────────┐
+           │ Fundraising Staff│
+           └──────────────────┘
