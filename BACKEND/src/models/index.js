@@ -3,6 +3,8 @@
  */
 const User = require('./User');
 const EmailOTP = require('./EmailOTP');
+const Invitation = require('./Invitation');
+const RefreshToken = require('./RefreshToken');
 const Company = require('./Company');
 const Lead = require('./Lead');
 const LeadNote = require('./LeadNote');
@@ -13,6 +15,8 @@ const Source = require('./Source');
 module.exports = {
   User,
   EmailOTP,
+  Invitation,
+  RefreshToken,
   Company,
   Lead,
   LeadNote,
