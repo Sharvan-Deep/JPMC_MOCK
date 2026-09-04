@@ -31,6 +31,15 @@ from ai_service.schemas.verification import (
     WASHFocusComparison,
 )
 
+from ai_service.schemas.freshness import (
+    FreshnessAssessment,
+    FreshnessCalculationRequest,
+    FreshnessHistoryResponse,
+    FreshnessStatus,
+    SourceFreshnessRecord,
+    SourceType,
+)
+
 __all__ = [
     "HealthResponse",
     "ErrorResponse",
@@ -58,5 +67,12 @@ __all__ = [
     "DocumentSummaryHeader",
     "CSRChangeDetectionResult",
     "CSRChangeDetectionRequest",
+    "FreshnessStatus",
+    "SourceType",
+    "SourceFreshnessRecord",
+    "FreshnessAssessment",
+    "FreshnessHistoryResponse",
+    "FreshnessCalculationRequest",
 ]
+
 

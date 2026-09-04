@@ -1,0 +1,198 @@
+{
+  "tata chemicals limited": [
+    {
+      "assessment_id": "a68a4b59-5a73-4962-a07c-311a0e99d584",
+      "company": "Tata Chemicals Limited",
+      "status": "YELLOW",
+      "reason": "Information is based on an older financial year; latest cycle disclosure has not yet been verified.",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "source": "CSR_ANNUAL_REPORT",
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "publication_date": "2024-06-25",
+      "retrieved_at": "2026-07-10T09:30:00Z",
+      "verified_at": "2026-07-11T14:00:00Z",
+      "verification_cycle": "2026-07",
+      "wash_direction": "STABLE",
+      "evidence": [],
+      "previous_status": null,
+      "sources": [
+        {
+          "source_name": "CSR_ANNUAL_REPORT 2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "publication_date": "2024-06-25",
+          "retrieved_at": "2026-07-10T09:30:00Z",
+          "verified_at": "2026-07-11T14:00:00Z",
+          "financial_year": "2023-24",
+          "status": "YELLOW",
+          "reason": "Information is based on an older financial year; latest cycle disclosure has not yet been verified."
+        }
+      ],
+      "assessment_metadata": {
+        "is_verified_current_cycle": true,
+        "is_current_reporting_cycle": false,
+        "document_available": true,
+        "sources_evaluated_count": 1
+      }
+    },
+    {
+      "assessment_id": "61355a76-3b4e-463e-8486-54a1015c5589",
+      "company": "Tata Chemicals Limited",
+      "status": "GREEN",
+      "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased).",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "source": "CSR_ANNUAL_REPORT",
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "publication_date": "2025-06-28",
+      "retrieved_at": "2026-09-02T11:00:00Z",
+      "verified_at": "2026-09-04T15:30:00Z",
+      "verification_cycle": "2026-09",
+      "wash_direction": "INCREASED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": "Swachh Jal RO safe drinking water expansion and Jal Sanrakshan aquifer recharge.",
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ],
+      "previous_status": "YELLOW",
+      "sources": [
+        {
+          "source_name": "Annual Report 2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": "2025-06-28",
+          "retrieved_at": "2026-09-02T11:00:00Z",
+          "verified_at": "2026-09-04T15:30:00Z",
+          "financial_year": "2024-25",
+          "status": "GREEN",
+          "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased)."
+        },
+        {
+          "source_name": "BRSR FY 2024-25",
+          "document_type": "BRSR",
+          "document_version": 1,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": "2025-07-05",
+          "retrieved_at": "2026-09-02T11:15:00Z",
+          "verified_at": "2026-09-04T15:45:00Z",
+          "financial_year": "2024-25",
+          "status": "GREEN",
+          "reason": "Principle 6 water stewardship metrics verified"
+        },
+        {
+          "source_name": "Standing CSR Policy",
+          "document_type": "CSR_POLICY",
+          "document_version": 1,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": null,
+          "retrieved_at": "2026-09-01T08:00:00Z",
+          "verified_at": "2026-09-04T15:00:00Z",
+          "financial_year": null,
+          "status": "YELLOW",
+          "reason": "Standing corporate policy framework"
+        }
+      ],
+      "assessment_metadata": {
+        "is_verified_current_cycle": true,
+        "is_current_reporting_cycle": true,
+        "document_available": true,
+        "sources_evaluated_count": 3
+      }
+    },
+    {
+      "assessment_id": "61355a76-3b4e-463e-8486-54a1015c5589",
+      "company": "Tata Chemicals Limited",
+      "status": "GREEN",
+      "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased).",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "source": "CSR_ANNUAL_REPORT",
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "publication_date": "2025-06-28",
+      "retrieved_at": "2026-09-02T11:00:00Z",
+      "verified_at": "2026-09-04T15:30:00Z",
+      "verification_cycle": "2026-09",
+      "wash_direction": "INCREASED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": "Swachh Jal RO safe drinking water expansion and Jal Sanrakshan aquifer recharge.",
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ],
+      "previous_status": "YELLOW",
+      "sources": [
+        {
+          "source_name": "Annual Report 2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": "2025-06-28",
+          "retrieved_at": "2026-09-02T11:00:00Z",
+          "verified_at": "2026-09-04T15:30:00Z",
+          "financial_year": "2024-25",
+          "status": "GREEN",
+          "reason": "Information verified in current cycle against latest disclosure; WASH relevance confirmed (increased)."
+        },
+        {
+          "source_name": "BRSR FY 2024-25",
+          "document_type": "BRSR",
+          "document_version": 1,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": "2025-07-05",
+          "retrieved_at": "2026-09-02T11:15:00Z",
+          "verified_at": "2026-09-04T15:45:00Z",
+          "financial_year": "2024-25",
+          "status": "GREEN",
+          "reason": "Principle 6 water stewardship metrics verified"
+        },
+        {
+          "source_name": "Standing CSR Policy",
+          "document_type": "CSR_POLICY",
+          "document_version": 1,
+          "document_hash": null,
+          "source_url": null,
+          "publication_date": null,
+          "retrieved_at": "2026-09-01T08:00:00Z",
+          "verified_at": "2026-09-04T15:00:00Z",
+          "financial_year": null,
+          "status": "YELLOW",
+          "reason": "Standing corporate policy framework"
+        }
+      ],
+      "assessment_metadata": {
+        "is_verified_current_cycle": true,
+        "is_current_reporting_cycle": true,
+        "document_available": true,
+        "sources_evaluated_count": 3
+      }
+    }
+  ]
+}
