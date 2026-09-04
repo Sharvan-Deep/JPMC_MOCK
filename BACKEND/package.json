@@ -1,0 +1,26 @@
+{
+  "name": "jaldhaara-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Jaldhaara Foundation donor discovery platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "import:companies": "node src/scripts/importCompanies.js"
+  },
+  "keywords": [
+    "jaldhaara",
+    "csr",
+    "wash"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
