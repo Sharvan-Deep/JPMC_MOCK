@@ -1,5 +1,34 @@
 # Changelog
 
+## 2026-09-04 — Dashboard APIs
+
+**Feature:** Read-only dashboard endpoints aggregating company, WASH, lead, and activity metrics.
+
+**Files created:**
+- `src/validators/dashboardValidator.js`
+- `src/services/dashboardService.js`
+- `src/controllers/dashboardController.js`
+- `src/routes/dashboardRoutes.js`
+- `src/tests/dashboard.test.js`
+
+**Files modified:**
+- `src/app.js` — mounted `/api/dashboard`
+- `package.json` — added `test:dashboard`
+
+**Endpoints:**
+- `GET /api/dashboard/summary` — company, WASH, lead, and activity metrics
+- `GET /api/dashboard/top-prospects` — active leads sorted by priority
+- `GET /api/dashboard/recent-leads` — recently updated leads
+- `GET /api/dashboard/follow-ups` — `FOLLOW_UP` leads oldest first
+
+**Tests:** `npm run test:dashboard`; lead, auth, invitation, and password-reset regression suites.
+
+**Assumptions:**
+- `companiesWithWASH` counts companies with `wash_record_count > 0` or `total_wash_spend_crore > 0`.
+- Follow-up queue uses `FOLLOW_UP` status ordered by `updatedAt` (no follow-up date field in schema).
+- Recent activity count uses a 30-day window on `LeadActivity.createdAt`.
+- Top prospects include only active (non-terminal) leads; priority sort uses stored `Lead.priority`.
+
 ## 2026-09-04 — Lead Management
 
 **Feature:** Backend Lead Management module for fundraising prospect tracking (company-linked leads, notes, activities, assignment).
