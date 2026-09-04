@@ -3,7 +3,7 @@ Document intake and contract validation endpoints.
 Provides the HTTP contract for receiving Task 2 documents for future processing.
 """
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from ai_service.classification.service import CSRClassificationService
 from ai_service.config import Settings, get_settings
 from ai_service.extraction.service import CSRExtractorService
@@ -13,15 +13,18 @@ from ai_service.schemas.document import DocumentInputSchema, DocumentValidationR
 from ai_service.schemas.extraction import CSRExtractionResult
 from ai_service.schemas.preprocessing import CSRPreprocessingResult
 from ai_service.schemas.vector_store import IndexingResult, SearchQueryRequest, SearchResult
+from ai_service.schemas.verification import CSRChangeDetectionRequest, CSRChangeDetectionResult
 from ai_service.services.document_service import DocumentService
 from ai_service.vector_store.indexer import CSRIndexingService
 from ai_service.vector_store.retriever import CSRSemanticSearchService
+from ai_service.verification.service import CSRChangeDetectionService
 
 router = APIRouter(prefix="/api/v1/documents", tags=["Documents"])
 
 
 def get_document_service(settings: Settings = Depends(get_settings)) -> DocumentService:
     return DocumentService(storage_base_path=settings.DOCUMENTS_STORAGE_PATH)
+
 
 
 def get_extractor_service(service: DocumentService = Depends(get_document_service)) -> CSRExtractorService:
@@ -152,3 +155,35 @@ async def search_documents(
         filters=search_request.filters,
         top_k=search_request.top_k,
     )
+
+
+def get_verification_service(
+    search_service: CSRSemanticSearchService = Depends(get_search_service),
+) -> CSRChangeDetectionService:
+    return CSRChangeDetectionService(search_service=search_service)
+
+
+@router.post(
+    "/verify-changes",
+    response_model=CSRChangeDetectionResult,
+    summary="Compare CSR information across document versions/financial years (Task 9)",
+    description=(
+        "Compares two CSR document snapshots across 7 dimensions (WASH focus, projects, "
+        "spending, geography, beneficiaries, commitments, CSR policy) and detects meaningful changes. "
+        "Historical information is never overwritten and both versions remain preserved."
+    ),
+)
+async def verify_document_changes(
+    request: CSRChangeDetectionRequest,
+    verifier: CSRChangeDetectionService = Depends(get_verification_service),
+):
+    """Compares CSR profiles across versions/years and detects meaningful changes."""
+    try:
+        return verifier.verify_changes(
+            previous_profile=request.previous_profile,
+            current_profile=request.current_profile,
+            query_chromadb_if_needed=request.query_chromadb_if_needed,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+

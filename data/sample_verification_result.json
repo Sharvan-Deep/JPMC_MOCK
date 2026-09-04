@@ -1,0 +1,828 @@
+{
+  "company": "Tata Chemicals Limited",
+  "previous_document": {
+    "company": "Tata Chemicals Limited",
+    "financial_year": "2023-24",
+    "document_version": 1,
+    "document_type": "CSR_ANNUAL_REPORT",
+    "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "current_document": {
+    "company": "Tata Chemicals Limited",
+    "financial_year": "2024-25",
+    "document_version": 2,
+    "document_type": "CSR_ANNUAL_REPORT",
+    "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+  },
+  "comparison_period": "2023-24 -> 2024-25",
+  "dimensions": {
+    "wash_focus": {
+      "previous_focus": [
+        "drinking_water",
+        "sanitation"
+      ],
+      "current_focus": [
+        "drinking_water",
+        "sanitation",
+        "water_access"
+      ],
+      "added_focus": [
+        "water_access"
+      ],
+      "removed_focus": [],
+      "retained_focus": [
+        "drinking_water",
+        "sanitation"
+      ],
+      "direction": "INCREASED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 18,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "projects": {
+      "new_projects": [
+        "Jal Sanrakshan Watershed & Aquifer Recharge"
+      ],
+      "discontinued_projects": [
+        "Community Sanitation & Hygiene Drive"
+      ],
+      "continuing_projects": [
+        "Swachh Jal Rural Drinking Water"
+      ],
+      "multi_year_projects": [
+        "Swachh Jal Rural Drinking Water"
+      ],
+      "semantic_matches": [],
+      "change_type": "CHANGED_DIRECTION",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 18,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "spending": {
+      "metrics": [
+        {
+          "metric": "total_csr_expenditure",
+          "previous_value": 25.5,
+          "current_value": 32.0,
+          "absolute_change": 6.5,
+          "percentage_change": 25.49,
+          "unit": "INR Crores",
+          "change_type": "INCREASED",
+          "evidence": [
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2023-24",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 1,
+              "page": 12,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+              "relevant_source_text": null,
+              "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2024-25",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 2,
+              "page": 15,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+              "relevant_source_text": null,
+              "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+            }
+          ]
+        },
+        {
+          "metric": "wash_expenditure",
+          "previous_value": 7.2,
+          "current_value": 11.5,
+          "absolute_change": 4.3,
+          "percentage_change": 59.72,
+          "unit": "INR Crores",
+          "change_type": "INCREASED",
+          "evidence": [
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2023-24",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 1,
+              "page": 12,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+              "relevant_source_text": null,
+              "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2024-25",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 2,
+              "page": 15,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+              "relevant_source_text": null,
+              "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+            }
+          ]
+        },
+        {
+          "metric": "water_expenditure",
+          "previous_value": 4.8,
+          "current_value": 7.5,
+          "absolute_change": 2.7,
+          "percentage_change": 56.25,
+          "unit": "INR Crores",
+          "change_type": "INCREASED",
+          "evidence": [
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2023-24",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 1,
+              "page": 12,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+              "relevant_source_text": null,
+              "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2024-25",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 2,
+              "page": 15,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+              "relevant_source_text": null,
+              "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+            }
+          ]
+        },
+        {
+          "metric": "sanitation_expenditure",
+          "previous_value": 2.4,
+          "current_value": 4.0,
+          "absolute_change": 1.6,
+          "percentage_change": 66.67,
+          "unit": "INR Crores",
+          "change_type": "INCREASED",
+          "evidence": [
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2023-24",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 1,
+              "page": 12,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+              "relevant_source_text": null,
+              "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2024-25",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 2,
+              "page": 15,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+              "relevant_source_text": null,
+              "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+            }
+          ]
+        }
+      ],
+      "project_spending_changes": [
+        {
+          "metric": "project:Swachh Jal Rural Drinking Water",
+          "previous_value": 4.8,
+          "current_value": 7.5,
+          "absolute_change": 2.7,
+          "percentage_change": 56.25,
+          "unit": "INR Crores",
+          "change_type": "INCREASED",
+          "evidence": [
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2023-24",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 1,
+              "page": 18,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+              "relevant_source_text": null,
+              "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "company": "Tata Chemicals Limited",
+              "financial_year": "2024-25",
+              "document_type": "CSR_ANNUAL_REPORT",
+              "document_version": 2,
+              "page": 22,
+              "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+              "relevant_source_text": null,
+              "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+            }
+          ]
+        }
+      ],
+      "overall_change_type": "INCREASED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 12,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 15,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "geography": {
+      "new_locations": [
+        "Maharashtra"
+      ],
+      "removed_locations": [],
+      "continuing_locations": [
+        "Gujarat"
+      ],
+      "new_districts": [
+        "Akola"
+      ],
+      "removed_districts": [],
+      "direction": "EXPANDED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 14,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 16,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "beneficiaries": {
+      "previous_groups": [
+        "Primary school students",
+        "Rural households"
+      ],
+      "current_groups": [
+        "Marginal farmers",
+        "Primary school students",
+        "Rural households"
+      ],
+      "new_groups": [
+        "Marginal farmers"
+      ],
+      "removed_groups": [],
+      "previous_count": 45000,
+      "current_count": 72000,
+      "count_absolute_change": 27000,
+      "count_percentage_change": 60.0,
+      "target_communities_change": null,
+      "change_type": "INCREASED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 25,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 30,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "commitments": {
+      "continued_commitments": [
+        "swachh jal rural drinking water"
+      ],
+      "new_commitments": [
+        "jal sanrakshan watershed & aquifer recharge"
+      ],
+      "completed_commitments": [],
+      "ongoing_projects": [
+        "jal sanrakshan watershed & aquifer recharge",
+        "swachh jal rural drinking water"
+      ],
+      "recurring_programs": [],
+      "stated_future_plans": [],
+      "change_type": "CONTINUED",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 28,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 33,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    "csr_policy": {
+      "added_priorities": [
+        "Water Security & Watershed Management"
+      ],
+      "removed_priorities": [
+        "Livelihood Promotion"
+      ],
+      "strengthened_priorities": [],
+      "reduced_priorities": [],
+      "unchanged_priorities": [
+        "Rural Sanitation",
+        "Safe Drinking Water Access"
+      ],
+      "wash_priority_status": "WASH maintained as strategic CSR policy priority",
+      "change_type": "CHANGED_DIRECTION",
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 6,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 7,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    }
+  },
+  "overall_wash_direction": "INCREASED",
+  "changes": [
+    {
+      "dimension": "spending:total_csr_expenditure",
+      "change_type": "INCREASED",
+      "description": "Total Csr Expenditure changed by 6.5 INR Crores (25.49%).",
+      "previous_value": 25.5,
+      "current_value": 32.0,
+      "absolute_change": 6.5,
+      "percentage_change": 25.49,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 12,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 15,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "spending:wash_expenditure",
+      "change_type": "INCREASED",
+      "description": "Wash Expenditure changed by 4.3 INR Crores (59.72%).",
+      "previous_value": 7.2,
+      "current_value": 11.5,
+      "absolute_change": 4.3,
+      "percentage_change": 59.72,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 12,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 15,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "spending:water_expenditure",
+      "change_type": "INCREASED",
+      "description": "Water Expenditure changed by 2.7 INR Crores (56.25%).",
+      "previous_value": 4.8,
+      "current_value": 7.5,
+      "absolute_change": 2.7,
+      "percentage_change": 56.25,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 12,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 15,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "spending:sanitation_expenditure",
+      "change_type": "INCREASED",
+      "description": "Sanitation Expenditure changed by 1.6 INR Crores (66.67%).",
+      "previous_value": 2.4,
+      "current_value": 4.0,
+      "absolute_change": 1.6,
+      "percentage_change": 66.67,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 12,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 15,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "projects",
+      "change_type": "NEW",
+      "description": "New project introduced: 'Jal Sanrakshan Watershed & Aquifer Recharge'.",
+      "previous_value": null,
+      "current_value": "Jal Sanrakshan Watershed & Aquifer Recharge",
+      "absolute_change": null,
+      "percentage_change": null,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 18,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "projects",
+      "change_type": "DISCONTINUED",
+      "description": "Project discontinued: 'Community Sanitation & Hygiene Drive'.",
+      "previous_value": "Community Sanitation & Hygiene Drive",
+      "current_value": null,
+      "absolute_change": null,
+      "percentage_change": null,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 18,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "geography",
+      "change_type": "EXPANDED",
+      "description": "Geographic expansion to states: Maharashtra.",
+      "previous_value": null,
+      "current_value": [
+        "Maharashtra"
+      ],
+      "absolute_change": null,
+      "percentage_change": null,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 14,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 16,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    },
+    {
+      "dimension": "wash_focus",
+      "change_type": "INCREASED",
+      "description": "WASH strategic focus shifted: INCREASED.",
+      "previous_value": [
+        "drinking_water",
+        "sanitation"
+      ],
+      "current_value": [
+        "drinking_water",
+        "sanitation",
+        "water_access"
+      ],
+      "absolute_change": null,
+      "percentage_change": null,
+      "evidence": [
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2023-24",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 1,
+          "page": 18,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+          "relevant_source_text": null,
+          "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "company": "Tata Chemicals Limited",
+          "financial_year": "2024-25",
+          "document_type": "CSR_ANNUAL_REPORT",
+          "document_version": 2,
+          "page": 22,
+          "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+          "relevant_source_text": null,
+          "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 12,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 15,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 14,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 16,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 18,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 22,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 25,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 30,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 28,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 33,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2023-24",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 1,
+      "page": 6,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2023_24.pdf",
+      "relevant_source_text": null,
+      "document_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "company": "Tata Chemicals Limited",
+      "financial_year": "2024-25",
+      "document_type": "CSR_ANNUAL_REPORT",
+      "document_version": 2,
+      "page": 7,
+      "source_url": "https://www.tatachemicals.com/upload/content_pdf/csr_annual_report_2024_25.pdf",
+      "relevant_source_text": null,
+      "document_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+    }
+  ],
+  "confidence": "HIGH",
+  "verification_metadata": {
+    "version_separation_preserved": true,
+    "deterministic_metrics_evaluated": 4,
+    "semantic_matches_evaluated": 0,
+    "chromadb_evidence_count": 0
+  }
+}

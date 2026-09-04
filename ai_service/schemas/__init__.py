@@ -8,6 +8,28 @@ from ai_service.schemas.document import (
 )
 from ai_service.schemas.errors import ErrorResponse
 from ai_service.schemas.health import HealthResponse
+from ai_service.schemas.verification import (
+    BeneficiaryComparison,
+    ChangeCategory,
+    CommitmentComparison,
+    CSRChangeDetectionRequest,
+    CSRChangeDetectionResult,
+    CSRChangeItem,
+    CSRDimensionsComparison,
+    CSRDocumentProfile,
+    CSREvidenceReference,
+    CSRProjectSnapshot,
+    DocumentSummaryHeader,
+    GeographyComparison,
+    PolicyComparison,
+    ProjectComparison,
+    ProjectSemanticMatch,
+    SpendingComparison,
+    SpendingComparisonItem,
+    VerificationConfidence,
+    WASHDirection,
+    WASHFocusComparison,
+)
 
 __all__ = [
     "HealthResponse",
@@ -16,4 +38,25 @@ __all__ = [
     "DocumentTypeEnum",
     "DocumentStatusEnum",
     "DocumentValidationResponse",
+    "ChangeCategory",
+    "WASHDirection",
+    "VerificationConfidence",
+    "CSREvidenceReference",
+    "CSRProjectSnapshot",
+    "CSRDocumentProfile",
+    "SpendingComparisonItem",
+    "SpendingComparison",
+    "WASHFocusComparison",
+    "ProjectSemanticMatch",
+    "ProjectComparison",
+    "GeographyComparison",
+    "BeneficiaryComparison",
+    "CommitmentComparison",
+    "PolicyComparison",
+    "CSRChangeItem",
+    "CSRDimensionsComparison",
+    "DocumentSummaryHeader",
+    "CSRChangeDetectionResult",
+    "CSRChangeDetectionRequest",
 ]
+
