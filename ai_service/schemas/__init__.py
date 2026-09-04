@@ -49,6 +49,15 @@ from ai_service.schemas.scoring import (
     ScoringComponentsBreakdown,
 )
 
+from ai_service.schemas.copilot import (
+    CopilotChatRequest,
+    CopilotChatResponse,
+    RecommendationAction,
+    RecommendationHistoryResponse,
+    RecommendationRequest,
+    RecommendationResult,
+)
+
 __all__ = [
     "HealthResponse",
     "ErrorResponse",
@@ -89,6 +98,12 @@ __all__ = [
     "LeadScore",
     "BatchScoringRequest",
     "BatchScoringResponse",
+    "RecommendationAction",
+    "RecommendationRequest",
+    "RecommendationResult",
+    "RecommendationHistoryResponse",
+    "CopilotChatRequest",
+    "CopilotChatResponse",
 ]
 
 
